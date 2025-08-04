@@ -1,0 +1,43 @@
+ctrl - l [
+    *           : yabai -m window --focus east || yabai -m display --focus east
+    "Ghostty"   ~
+]
+
+ctrl - h [
+    *           : yabai -m window --focus west || yabai -m display --focus west
+    "Ghostty"   ~
+]
+
+ctrl - j [
+    *           : yabai -m window --focus south || yabai -m display --focus south
+    "Ghostty"   ~
+]
+
+ctrl - k [
+    *           : yabai -m window --focus north || yabai -m display --focus north
+    "Ghostty"   ~
+]
+
+fn - l : yabai -m window --focus east || yabai -m display --focus east
+fn - h : yabai -m window --focus west || yabai -m display --focus west
+fn - j : yabai -m window --focus south || yabai -m display --focus south
+fn - k : yabai -m window --focus north || yabai -m display --focus north
+
+shift + ctrl - p : yabai -m space --focus prev
+shift + ctrl - n : yabai -m space --focus next
+shift + ctrl - x : yabai -m space --destroy "$(yabai -m query --spaces --display | jq -r 'map(select(."has-focus" == true))[0].index')"
+fn - p : yabai -m space --focus prev
+fn - n : yabai -m space --focus next
+shift + ctrl - m : yabai -m window --toggle zoom-fullscreen
+shift + fn - m : yabai -m window --toggle zoom-fullscreen
+shift + ctrl - i : yabai -m space --balance
+shift + fn - n : yabai -m space --balance
+
+shift + ctrl - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
+shift + ctrl - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
+shift + ctrl - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m window --focus west) || yabai -m window --space prev
+shift + ctrl - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m window --focus east) || yabai -m window --space next
+shift + fn - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
+shift + fn - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
+shift + fn - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m window --focus west) || yabai -m window --space prev
+shift + fn - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m window --focus east) || yabai -m window --space next
