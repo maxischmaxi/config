@@ -46,7 +46,7 @@ local function tmux_yabai_or_split_switch(wincmd, direction)
 	vim.cmd("silent! wincmd " .. wincmd)
 	local current_winnr = vim.api.nvim_get_current_win()
 	if previous_winnr == current_winnr then
-		os.execute("tmux-yabai.sh " .. direction)
+		os.execute("tmux-window-navigation.sh " .. direction)
 	end
 end
 
