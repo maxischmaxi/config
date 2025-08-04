@@ -52,4 +52,5 @@ require("lazy").setup({
 	require("plugins.hardtime"),
 	require("plugins.copilot"),
 	require("plugins.dressing"),
+	require("plugins.gitsigns"),
 })
