@@ -16,7 +16,6 @@ export PATH="$PATH:$HOME/emsdk/upstream/emscripten"
 export PATH="$PATH:/Library/TeX/texbin"
 export PATH="$PATH:$HOME/depot_tools"
 export PATH="$PATH:$(go env GOPATH)/bin"
-export PATH="$PATH:$HOME/.config/dotfiles/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/mongodb/bin"
 

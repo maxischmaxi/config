@@ -12,6 +12,6 @@ fi
 if git config --get alias.ai &>/dev/null || \
    git config --global --get alias.ai &>/dev/null; then
 else
-  cmd='git add -A && ~/.config/dotfiles/bin/commit-message.sh'
+  cmd='git add -A && ~/.config/commit-message.sh'
   git config --"$flag" alias.ai \!"$cmd"
 fi
