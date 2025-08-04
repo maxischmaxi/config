@@ -31,7 +31,6 @@ require("lazy").setup({
 	require("plugins.oil"),
 	require("plugins.mason"),
 	require("plugins.mason-lspconfig"),
-	-- require("plugins.nvim-lspconfig"),
 	require("plugins.nvim-cmp"),
 	require("plugins.sleuth"),
 	require("plugins.autopairs"),
