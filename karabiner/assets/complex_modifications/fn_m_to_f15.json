@@ -1,0 +1,24 @@
+{
+    "title": "Map fn + m to F15",
+    "rules": [
+        {
+            "description": "Map fn + m to F15",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f15"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

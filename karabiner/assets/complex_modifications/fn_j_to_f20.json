@@ -1,0 +1,24 @@
+{
+    "title": "Map fn + j to F20",
+    "rules": [
+        {
+            "description": "Map fn + j to F20",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f20"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
