@@ -11,33 +11,33 @@
     {
       "matches": ["*://*/*"],
       "css": ["global.css"]
+    },
+    {
+      "matches": ["*://www.chess.com/*", "*://chess.com/*"],
+      "css": ["chess.css"]
     }
   ],
   "commands": {
     "move_tab_left": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Left",
         "mac": "MacCtrl+Command+P"
       },
       "description": "Move tab left"
     },
     "move_tab_right": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Right",
         "mac": "MacCtrl+Command+N"
       },
       "description": "Move tab right"
     },
     "focus_tab_left": {
       "suggested_key": {
-        "default": "Ctrl+Left",
         "mac": "MacCtrl+P"
       },
       "description": "Focus tab left"
     },
     "focus_tab_right": {
       "suggested_key": {
-        "default": "Ctrl+Right",
         "mac": "MacCtrl+N"
       },
       "description": "Focus tab right"

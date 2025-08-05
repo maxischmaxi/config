@@ -1,5 +1,5 @@
 body.tab-width-8 {
-    tab-size: 4 !important;
+  tab-size: 4 !important;
 }
 
 pre code,
@@ -7,22 +7,5 @@ pre *,
 pre span,
 .tab-width-8,
 pre {
-    tab-size: 4 !important;
-}
-
-#main-banner,
-.medium-rectangle-ad-component,
-#board-layout-ad,
-.board-layout-ad,
-.medium-rectangle-btf-ad-wrapper,
-#medium-rectangle-btf-ad,
-#leaderboard-atf-ad,
-.leaderboard-atf-ad-wrapper,
-.medium-rectangle-atf-ad-wrapper,
-#medium-rectangle-ad-component,
-.ad-upgrade-link-component,
-.game-over-ad-container-component,
-.medium-rectangle-ad-slot {
-    display: none;
-    visibility: hidden;
+  tab-size: 4 !important;
 }
