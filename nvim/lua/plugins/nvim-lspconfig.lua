@@ -10,6 +10,13 @@ return {
 			html = { filetypes = { "html", "twig", "hbs" } },
 			jsonls = { filetypes = { "json", "jsonc" } },
 			ltex = { ltex = { enabled = { "tex" }, language = "de-DE" } },
+			bacon = {},
+			bacon_ls = {
+				init_options = {
+					updateOnSave = true,
+					updateOnSaeWaitMillis = 1000,
+				},
+			},
 			lua_ls = {
 				cmd = { "lua-language-server" },
 				filetypes = { "lua" },
@@ -41,7 +48,12 @@ return {
 				settings = { python = { analysis = { autoSearchPaths = true, useLibraryCodeForTypes = true } } },
 				filetypes = { "python" },
 			},
-			rust_analyzer = { diagnostics = { refreshSupport = false } },
+			rust_analyzer = {
+				checkOnSave = {
+					enabled = false,
+				},
+				diagnostics = { refreshSupport = false, enabled = false },
+			},
 			stylelint_lsp = {
 				filetypes = { "css", "scss", "less", "sass", "html" },
 			},

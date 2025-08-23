@@ -53,4 +53,5 @@ require("lazy").setup({
 	require("plugins.copilot"),
 	require("plugins.dressing"),
 	require("plugins.gitsigns"),
+	require("plugins.harpoon"),
 })

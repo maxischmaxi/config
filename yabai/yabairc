@@ -34,7 +34,7 @@ yabai -m config \
     window_gap                          4               \
 
 yabai -m rule --add app=".*" sub-layer=normal
-yabai -m rule --add app="^(System­einstellungen|Aktivitätsanzeige|FirstSpirit ServerManager|Raspberry|Raycast|Contexts|App Store)$" manage=off
+yabai -m rule --add app="^(System­einstellungen|Aktivitätsanzeige|metin2client|metin2server|FirstSpirit ServerManager|Raspberry|Raycast|Contexts|App Store)$" manage=off
 yabai -m rule --add app="^(Karabiner-Elements|Karabiner-EventViewer|CitrixEndpointAnalysis|Logitech G HUB)$" manage=off sub-layer=below
 yabai -m rule --add app="Google Chrome" title="^about:blank - " manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="Kopieren" manage=off

@@ -31,7 +31,10 @@ set("n", "<C-i>", ":noh<CR>", { silent = true, desc = "hide search highlights" }
 set("n", "<leader>dn", function()
 	vim.diagnostic.jump({
 		count = 1,
-		severity = vim.diagnostic.severity.ERROR,
+		severity = {
+			min = vim.diagnostic.severity.INFO,
+			max = vim.diagnostic.severity.ERROR,
+		},
 	})
 end)
 set("n", "<leader>dp", function()
