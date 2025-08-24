@@ -22,9 +22,6 @@ local vimOptions = {
 	cursorline = false,
 	termguicolors = true,
 	clipboard = "unnamedplus",
-	tabstop = 4,
-	shiftwidth = 4,
-	softtabstop = 4,
 	autoindent = true,
 	smartindent = false,
 }

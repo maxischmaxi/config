@@ -21,6 +21,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("custom.auto_set_tabstop")
 require("custom.base_options")
 require("custom.base_keymap")
 require("custom.hex_to_rgb")
