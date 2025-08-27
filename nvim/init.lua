@@ -49,7 +49,7 @@ require("lazy").setup({
 	require("plugins.conflict-marker"),
 	require("plugins.spectre"),
 	require("plugins.formatter"),
-	require("plugins.codecompanion"),
+	-- require("plugins.codecompanion"),
 	require("plugins.hardtime"),
 	require("plugins.copilot"),
 	require("plugins.dressing"),

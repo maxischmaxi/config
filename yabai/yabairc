@@ -33,17 +33,32 @@ yabai -m config \
     right_padding                       4               \
     window_gap                          4               \
 
+yabai -m config layout bsp
+
 yabai -m rule --add app=".*" sub-layer=normal
-yabai -m rule --add app="^(System­einstellungen|Aktivitätsanzeige|metin2client|metin2server|FirstSpirit ServerManager|Raspberry|Raycast|Contexts|App Store)$" manage=off
-yabai -m rule --add app="^(Karabiner-Elements|Karabiner-EventViewer|CitrixEndpointAnalysis|Logitech G HUB)$" manage=off sub-layer=below
+yabai -m rule --add app="App Store" manage=off
+yabai -m rule --add app="Contexts" manage=off
+yabai -m rule --add app="Raycast" manage=off
+yabai -m rule --add app="Raspberry" manage=off
+yabai -m rule --add app="FirstSpirit ServerManager" manage=off
+yabai -m rule --add app="metin2server" manage=off
+yabai -m rule --add app="metin2client" manage=off
+yabai -m rule --add app="Aktivitätsanzeige" manage=off
+yabai -m rule --add app="System­einstellungen" manage=off
+yabai -m rule --add app="Karabiner-Elements" manage=off sub-layer=below
+yabai -m rule --add app="CitrixEndpointAnalysis" manage=off sub-layer=below
+yabai -m rule --add app="Karabiner-EventViewer" manage=off sub-layer=below
+yabai -m rule --add title="BloonsTD6" app="BloonsTD6" manage=off
+yabai -m rule --add app="Steam Helper" manage=off sub-layer=below
+yabai -m rule --add app="Steam" manage=off sub-layer=below
 yabai -m rule --add app="Google Chrome" title="^about:blank - " manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="Kopieren" manage=off
-# yabai -m rule --add app="^Slack$" title="^Huddle" manage=off
 yabai -m rule --add app="Ghostty" title="^$" manage=off
 
-yabai -m signal --add event=display_added action="~/.config/yabai/scripts/widescreen-attached.sh"
-yabai -m signal --add event=display_removed action="~/.config/yabai/scripts/widescreen-detached.sh"
+yabai -m rule --apply
 
-yabai -m config layout bsp
+# yabai -m signal --add event=display_added action="~/.config/yabai/scripts/widescreen-attached.sh"
+# yabai -m signal --add event=display_removed action="~/.config/yabai/scripts/widescreen-detached.sh"
+
 # borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 &
 # borders &
