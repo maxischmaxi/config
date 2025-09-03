@@ -28,6 +28,7 @@ shift + ctrl - n : yabai -m space --focus next
 shift + ctrl - x : yabai -m space --destroy "$(yabai -m query --spaces --display | jq -r 'map(select(."has-focus" == true))[0].index')"
 fn - p : yabai -m space --focus prev
 fn - n : yabai -m space --focus next
+shift + fn - i : yabai -m space --balance
 shift + ctrl - m : yabai -m window --toggle zoom-fullscreen
 shift + fn - m : yabai -m window --toggle zoom-fullscreen
 shift + ctrl - i : yabai -m space --balance
