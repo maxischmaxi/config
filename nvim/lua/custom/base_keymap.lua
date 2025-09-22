@@ -27,7 +27,7 @@ set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
-set("n", "<C-i>", ":noh<CR>", { silent = true, desc = "hide search highlights" })
+set("n", "<C-ö>", ":noh<CR>", { silent = true, desc = "hide search highlights" })
 set("n", "<leader>dn", function()
 	vim.diagnostic.jump({
 		count = 1,

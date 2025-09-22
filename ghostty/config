@@ -12,8 +12,8 @@ window-inherit-font-size       = true
 # Window
 window-padding-balance         = false
 window-decoration              = false
-background-blur                = true
-background-opacity             = 0.9
+background-blur                = false
+background-opacity             = 1
 # window-padding-x               = 10
 # window-padding-y               = 10
 window-vsync                   = false
@@ -34,7 +34,7 @@ link-url                       = true
 macos-titlebar-proxy-icon      = hidden
 macos-titlebar-style           = tabs
 mouse-hide-while-typing        = true
-theme                          = tokyonight_night
+theme                          = Tokyonight Night
 window-vsync                   = true
 
 # Keybind
