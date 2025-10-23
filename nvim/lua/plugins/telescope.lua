@@ -83,6 +83,11 @@ return {
 				current_buffer_fuzzy_find = {
 					previewer = false,
 				},
+				live_grep = {
+					additional_args = function(_)
+						return { "--hidden", "--no-ignore" }
+					end,
+				},
 				find_files = {
 					previewer = false,
 					hidden = true,
@@ -91,6 +96,11 @@ return {
 						"rg",
 						"--files",
 						"--hidden",
+						"--no-heading",
+						"--with-filename",
+						"--line-number",
+						"--smart-case",
+						"--color=never",
 						"--glob",
 						"!**/.git/*",
 					},
@@ -110,16 +120,20 @@ return {
 
 		local set = vim.keymap.set
 
-		set("n", "<leader><space>", require("telescope.builtin").buffers, { desc = "[ ] Find existing buffers" })
-		set("n", "<leader>/", function()
-			require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-				winblend = 10,
-				previewer = false,
-			}))
-		end, { desc = "[/] Fuzzily search in current buffer" })
-
-		set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
-		set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
+		set("n", "<leader>sf", function()
+			require("telescope.builtin").find_files({
+				no_ignore = true,
+				hidden = true,
+			})
+		end, { desc = "[S]earch [F]iles" })
+		set("n", "<leader>sg", function()
+			require("telescope.builtin").live_grep({
+				search_dirs = { ".claude" },
+				additional_args = function(_)
+					return { "--no-ignore", "--hidden" }
+				end,
+			})
+		end, { desc = "[S]earch by [G]rep" })
 		set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
 		set("n", "<leader>sr", require("telescope.builtin").resume, { desc = "[S]earch [R]esume" })
 		set("n", "gd", require("telescope.builtin").lsp_definitions, { desc = "[G]oto [D]efinition" })

@@ -47,6 +47,7 @@ yabai -m rule --add app="metin2client" manage=off
 yabai -m rule --add app="Aktivitätsanzeige" manage=off
 yabai -m rule --add app="System­einstellungen" manage=off
 yabai -m rule --add app="Karabiner-Elements" manage=off sub-layer=below
+yabai -m rule --add app="Archivierungsprogramm" manage=off sub-layer=below
 yabai -m rule --add app="CitrixEndpointAnalysis" manage=off sub-layer=below
 yabai -m rule --add app="Karabiner-EventViewer" manage=off sub-layer=below
 yabai -m rule --add title="BloonsTD6" app="BloonsTD6" manage=off

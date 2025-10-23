@@ -19,10 +19,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/mongodb/bin"
 export PATH="$PATH:$HOME/.config/bin"
-
-if [[ "$(uname)" == "Linux" ]]; then
-  export PATH="$PATH:$HOME/.local/bin"
-fi
+export PATH="$PATH:$HOME/.local/bin"
 
 export ENV=development
 
