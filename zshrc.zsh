@@ -41,6 +41,14 @@ alias gca="git commit -a"
 alias ca="calendar-export"
 alias python="/opt/homebrew/bin/python3"
 
+# pnpm
+export PNPM_HOME="/Users/max/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 if [[ "$(uname)" == "Darwin" ]]; then
     export HOMEBREW_NO_ENV_HINTS=1
     . $HOMEBREW_PREFIX/etc/profile.d/z.sh
@@ -51,3 +59,5 @@ fi
 if [ -z "$TMUX" ]; then
   tmux attach || tmux new
 fi
+
+

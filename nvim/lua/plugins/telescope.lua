@@ -115,12 +115,7 @@ return {
 
 		local set = vim.keymap.set
 
-		set("n", "<leader>sf", function()
-			require("telescope.builtin").find_files({
-				no_ignore = true,
-				hidden = true,
-			})
-		end, { desc = "[S]earch [F]iles" })
+		set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
 		set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 		set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
 		set("n", "<leader>sr", require("telescope.builtin").resume, { desc = "[S]earch [R]esume" })
