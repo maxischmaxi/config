@@ -25,14 +25,12 @@ require("custom.auto_set_tabstop")
 require("custom.base_options")
 require("custom.base_keymap")
 require("custom.hex_to_rgb")
+require("custom.lsp")
 -- require("custom.studienarbeit")
 
 require("lazy").setup({
-	require("plugins.lazydev"),
 	require("plugins.oil"),
-	require("plugins.mason"),
-	require("plugins.mason-lspconfig"),
-	require("plugins.nvim-cmp"),
+	-- require("plugins.nvim-cmp"),
 	require("plugins.sleuth"),
 	require("plugins.autopairs"),
 	require("plugins.autotag"),
@@ -48,11 +46,8 @@ require("lazy").setup({
 	require("plugins.tokyonight"),
 	require("plugins.conflict-marker"),
 	require("plugins.spectre"),
-	require("plugins.formatter"),
-	-- require("plugins.codecompanion"),
 	require("plugins.hardtime"),
 	require("plugins.copilot"),
 	require("plugins.dressing"),
 	require("plugins.gitsigns"),
-	require("plugins.harpoon"),
 })

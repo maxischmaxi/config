@@ -39,11 +39,3 @@ end
 for k, v in pairs(windowOptions) do
 	vim.wo[k] = v
 end
-
-vim.diagnostic.config({
-	underline = true,
-	virtual_text = { source = "if_many", spacing = 2 },
-	signs = true,
-	update_in_insert = false,
-	severity_sort = true,
-})
