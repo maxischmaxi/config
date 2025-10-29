@@ -22,6 +22,7 @@ export PATH="$PATH:$HOME/.config/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 export ENV=development
+export ESLINT_USE_FLAT_CONFIG=false
 
 export DYLD_LIBRARY_PATH="/usr/local/lib:$DYLD_LIBRARY_PATH"
 
