@@ -13,8 +13,8 @@ set("v", "∆", ":m '<-2<CR>gv=gv", { silent = true })
 set("n", "<leader>+", ':exe "vertical resize " . (winwidth(0) * 4/1)<CR>', { silent = true })
 set("n", "<leader>-", ':exe "vertical resize " . (winwidth(0) * 1/4)<CR>', { silent = true })
 
-set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
-set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
+-- set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
+-- set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
 
 set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
