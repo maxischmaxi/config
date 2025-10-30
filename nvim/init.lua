@@ -462,7 +462,7 @@ require("telescope").load_extension("fzf")
 
 set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
 set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
-set("n", "gd", vim.lsp.buf.declaration, { desc = "[G]oto [D]efinition" })
+set("n", "gd", require("telescope.builtin").lsp_definitions, { desc = "[G]oto [D]efinition" })
 set("n", "gr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences" })
 set("n", "gI", require("telescope.builtin").lsp_implementations, { desc = "[G]oto [I]mplementation" })
 
