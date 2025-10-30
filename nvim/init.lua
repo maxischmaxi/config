@@ -47,7 +47,8 @@ vim.pack.add({
 	"https://github.com/stevearc/dressing.nvim",
 	"https://github.com/nvim-pack/nvim-spectre",
 	"https://github.com/stevearc/conform.nvim",
-	"https://github.com/projekt0n/github-nvim-theme",
+	-- "https://github.com/projekt0n/github-nvim-theme",
+	"https://github.com/folke/tokyonight.nvim",
 	"https://github.com/neovim/nvim-lspconfig",
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/mason-org/mason-lspconfig.nvim",
@@ -212,10 +213,19 @@ require("lazydev").setup({
 	},
 })
 
-require("github-theme").setup({})
-require("custom.auto_set_tabstop")
+-- require("github-theme").setup({})
+-- vim.cmd("colorscheme github_dark_default")
 
-vim.cmd("colorscheme github_dark_default")
+require("tokyonight").setup({
+	transparent = true,
+	styles = {
+		sidebars = "transparent",
+		floats = "transparent",
+	},
+})
+vim.cmd([[ colorscheme tokyonight-night ]])
+
+require("custom.auto_set_tabstop")
 
 vim.g.conflict_marker_begin = "^<<<<<<<\\+ .*$"
 vim.g.conflict_marker_common_ancestors = "^|||||||\\+ .*$"

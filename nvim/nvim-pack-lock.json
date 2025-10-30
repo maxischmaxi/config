@@ -112,6 +112,10 @@
     "telescope.nvim": {
       "rev": "b4da76b",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "tokyonight.nvim": {
+      "rev": "2642dbb",
+      "src": "https://github.com/folke/tokyonight.nvim"
     }
   }
 }
