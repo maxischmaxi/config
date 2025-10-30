@@ -37,6 +37,10 @@
       "rev": "c2dfe35",
       "src": "https://github.com/folke/lazydev.nvim"
     },
+    "lualine.nvim": {
+      "rev": "3946f01",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
     "mason-lspconfig.nvim": {
       "rev": "3590d66",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
@@ -84,6 +88,10 @@
     "nvim-ts-autotag": {
       "rev": "c4ca798",
       "src": "https://github.com/windwp/nvim-ts-autotag"
+    },
+    "nvim-web-devicons": {
+      "rev": "8dcb311",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
       "rev": "7e1cd77",
